@@ -1,6 +1,20 @@
 # Calibrate dji tello camera with arUco markers using opencv and python. 
 (Code developed and tested on opencv 3.3.1)
+# what is Dji Tello drone:
+Tello is a small quadcopter that features a Vision Positioning System and an onboard camera.
 
+# Notable Features of Tello Drone
+DJI Tello has an excellent flight time of 13 minutes. (enough for your indoor testing!)
+It comes with a 5MP camera. It can shoot 720p videos, and has digital image stabilization!
+Approximately 80 g (Propellers and Battery Included) in weight.
+This small drone has a maximum flight distance of 100 meters and you can fly
+The Tello drone is equipped with a camera that has the following intrinsic parameters:
+
+Focal length (fx, fy): 3.58mm
+Optical center (cx, cy): (960, 540)
+Image resolution: 960x720 pixels
+
+These intrinsic parameters are fixed and cannot be changed. However, it is possible to adjust the camera's field of view and perspective through software settings in the Tello app or programming interface.
 
 # camera_calibration
 Code and resources for camera calibration using arUco markers and opencv 
@@ -15,7 +29,12 @@ In my case,I took 120 photos but it depends on the user
 
 
 ## Calibrating camera
-run the file "camera_calibration.py" after you make it executable with " chmod +x camera_calibration.py "
+make it executable and run the file "camera_calibration.py" 
+'''
+1.chmod +x camera_calibration.py
+2.python camera_calibration.py
+'''
+
 
 
 
