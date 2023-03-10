@@ -1,7 +1,6 @@
 '''I wrote This script is for generating data from laptop camera and has the ability to save the images inside the desired path
 1. Provide desired path to store images.
 2. Press 'c' to capture image and display it.
-3. Press any button to continue.
 4. Press 'q' to quit.
 '''
 import os
