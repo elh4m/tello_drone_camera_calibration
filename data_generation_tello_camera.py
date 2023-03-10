@@ -1,5 +1,5 @@
 
-#this code takes picture when the user press "c"
+#this code takes pictures from the tello drone camera when the user press "c"
 import os
 import cv2
 from djitellopy import Tello
@@ -9,10 +9,10 @@ tello = Tello()
 tello.connect()
 tello.streamon()
 frame_read = tello.get_frame_read()
-path = "calibration_aruco/camera_calibration/aruco_images/"
+path = "calibration_aruco/camera_calibration/aruco_images/" #this is the desired path where your pictures are going to be saved
 print(tello.get_battery)
 
-count=0
+
 frame = frame_read.frame
 # Define a function to take a picture
 def take_picture():
@@ -24,10 +24,7 @@ def take_picture():
     cv2.imwrite(name, frame)
     print(f"Image saved as {name}")
 
-    
-    
-
-
+   
 counter=0
 # Loop for reading frames
 while True:
@@ -39,10 +36,9 @@ while True:
     # Display the frame
     cv2.imshow("Tello", frame)
     k = cv2.waitKey(10)
-    # Check for the "c" key
     
-    if k==99:
-        #print(k)
+    # Check for the "c" key
+    if k==99: #this is the ASCII code for c key
         take_picture()
         counter+=1
 
