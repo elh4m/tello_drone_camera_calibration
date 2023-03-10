@@ -1,7 +1,7 @@
 # Calibrate dji tello camera with arUco markers using opencv and python. 
 (Code developed and tested on opencv 3.3.1)
 # what is Dji Tello drone:
-Tello is a small quadcopter that features a Vision Positioning System and an onboard camera.
+Tello is a small quadcopter that features a Vision Positioning System and has an onboard camera.
 
 # Notable Features of Tello Drone
 DJI Tello has an excellent flight time of 13 minutes. (enough for your indoor testing!)
@@ -11,7 +11,9 @@ This small drone has a maximum flight distance of 100 meters and you can fly
 The Tello drone is equipped with a camera that has the following intrinsic parameters:
 
 Focal length (fx, fy): 3.58mm
+
 Optical center (cx, cy): (960, 540)
+
 Image resolution: 960x720 pixels
 
 These intrinsic parameters are fixed and cannot be changed. However, it is possible to adjust the camera's field of view and perspective through software settings in the Tello app or programming interface.
