@@ -18,6 +18,12 @@ Image resolution: 960x720 pixels
 
 These intrinsic parameters are fixed and cannot be changed. However, it is possible to adjust the camera's field of view and perspective through software settings in the Tello app or programming interface.
 
+#system requirements
+'''
+pip install tqdm
+pip install numpy
+'''
+
 # camera_calibration
 Code and resources for camera calibration using arUco markers and opencv 
 
@@ -28,6 +34,7 @@ Code and resources for camera calibration using arUco markers and opencv
 5.make sure you move the board along 3 axis ,X,Y,Z
 
 In my case,I took 120 photos but it depends on the user
+
 
 
 ## Calibrating camera
