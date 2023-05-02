@@ -20,11 +20,10 @@ These intrinsic parameters are fixed and cannot be changed. However, it is possi
 
 # system requirements
 
-'''
+``` 
 pip install tqdm
 pip install numpy
-
-'''
+``` 
 
 # camera_calibration
 Code and resources for camera calibration using arUco markers and opencv 
@@ -42,12 +41,11 @@ In my case,I took 120 photos but it depends on the user
 ## Calibrating camera
 make it executable and run the file "camera_calibration.py" 
  
-'''
+```
 1.chmod +x camera_calibration.py 
 
 2.python camera_calibration.py 
-
-'''
+``` 
 
 
 
