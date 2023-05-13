@@ -34,7 +34,7 @@ Code and resources for camera calibration using arUco markers and opencv
 4.refer to /aruco_images for sample pictures
 5.make sure you move the board along 3 axis ,X,Y,Z
 
-In my case,I took 120 photos but it depends on the user
+# if you already have a checkerboard with know square size (in meter) you can use the calibration.py file 
 
 
 
